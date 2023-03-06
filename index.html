@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Extension</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button onclick="active()" class="toggle-btn" type="button">active</button>
+                <button onclick="closed()" class="toggle-btn" type="button">closed</button>
+            </div>
+            <div id="active" class="data-box">
+                <h6>YouTube</h6>
+                <hr>
+                <h6>WhatsApp</h6>
+                <hr>
+                <h6>Google Docs</h6>
+                <hr>
+                <h6>Twitter</h6>
+                <hr>
+                <h6>PubMed</h6>
+            </div>
+            <div id="closed" class="data-box">
+                <h6>GitHub</h6>
+                <hr>
+                <h6>Figma</h6>
+                <hr>
+                <h6>HackerRank</h6>
+                <hr>
+                <h6>Udemy</h6>
+                <hr>
+                <h6>Instagram</h6>
+            </div>
+        </div>
+    </div>
+    <script>
+        let x = document.getElementById("active")
+        let y = document.getElementById("closed")
+        let z = document.getElementById("btn")
+
+        function closed(){
+            x.style.left = "-400px"
+            y.style.left = "50px"
+            z.style.left = "120px"
+        }
+        function active(){
+            x.style.left = "50px"
+            y.style.left = "400px"
+            z.style.left = "0px"
+        }
+    </script>
+</body>
+</html>
